@@ -4,7 +4,7 @@
     --header-height: 3rem;
 
     /* Colors */
-    --hue-color: 227;
+    --hue-color: 30;
 
         /* HSL Color Mode */
     --first-color: hsl(var(--hue-color), 69%, 58%);
@@ -115,7 +115,7 @@ body.dark-theme{
     align-items: center;
     padding-left: var(--mb-0-5);
     margin: 0;
-    margin-top: -5px;
+    margin-top: -15px;
     gap: var(--mb-0-75);
 }
 
@@ -400,6 +400,7 @@ img{
     width: 600px;
     align-content: center;
     text-align: center;
+    margin-right: 4rem;
     transform: translateX(-4rem);
 }
 
@@ -510,15 +511,31 @@ img{
     margin-top: 7rem;
 }
 .about__img{
-    width: 200px;
-    border-radius: .5rem;
-    margin-bottom: var(--mb-2);
-    display: inline-flex;
-    justify-self: center;
+  width: 400px; /* Define el ancho deseado */
+  height: 550px; /* Define la altura deseada */
+  border-radius: 90%; /* Aplica bordes redondeados para hacerla redonda */
+  margin-bottom: var(--mb-2); /* Agrega margen inferior según la variable definida */
+  display: inline-flex; /* Establece la visualización como flex-inline para permitir alinearla horizontalmente */
+  justify-self: center; /* Centra horizontalmente la imagen dentro de su contenedor */
+}
+
+.myself_img {
+  border-radius: 40px; /* Ajusta el valor según lo redondeada que quieras la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+  max-width: 100%; /* Para asegurarte de que la imagen no exceda su contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  margin: 20px auto; /* Ajusta el margen según sea necesario */
+  display: inline-flex; /* Establece la visualización como flex-inline para permitir alinearla horizontalmente */
+  justify-self: center; /* Centra horizontalmente la imagen dentro de su contenedor */
+  width: 300px; /* Ajusta el ancho según sea necesario */
 }
 
 .about__description{
     text-align: center;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    padding: 1rem 1.5rem 1rem 1.5rem;
     margin-bottom: var(--mb-2-5);
     color: var(--text-color);
 }
@@ -611,8 +628,8 @@ img{
 }
 .imgBx{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     transition: 0.5s;
     transform: translate( 5%, -10%);
     object-fit: fill;
@@ -1481,7 +1498,7 @@ img{
     }
 
     .about__description{
-      text-align: initial;
+      text-align: center; /* Centra el texto */
     }
 
     /* .about__info{
