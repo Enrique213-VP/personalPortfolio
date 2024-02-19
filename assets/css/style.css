@@ -1572,4 +1572,26 @@ img{
       .form{
         min-width: 700px;
       }
+
+        /* Estilos opcionales para los botones */
+      .social-btn {
+          display: inline-flex;
+          justify-content: center;
+          margin: 10px;
+          padding: 10px 20px;
+          text-decoration: none;
+          color: #fff;
+          border-radius: 5px;
+      }
+
+      /* Estilos para los colores de fondo */
+      .facebook { background-color: #1877f2; }
+      .linkedin { background-color: #0077b5; }
+      .instagram { background-color: #e4405f; }
+
+      /* Estilos para los iconos */
+      .social-btn i {
+          margin-right: 8px;
+      }
+      
   }
